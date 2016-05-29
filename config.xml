@@ -84,5 +84,4 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 	
-	<uses-feature android:name="android.hardware.camera" android:required="false"/>
  </widget>
