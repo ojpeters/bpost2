@@ -39,68 +39,12 @@
 
 			<div class="content">
 
-				<fieldset>
-					<h2>Personal Info</h2>
-					<!-- start name -->
-					<div class="unit">
-						<div class="input">
-							<label class="icon-right" for="name">
-								<i class="fa fa-user"></i>
-							</label>
-							<input type="text" id="name" name="name" placeholder="your name">
-						</div>
-					</div>
-					<!-- end name -->
+			
 
-					<!-- start email phone -->
-					<div class="j-row">
-						<div class="span6 unit">
-							<div class="input">
-								<label class="icon-right" for="email">
-									<i class="fa fa-envelope-o"></i>
-								</label>
-								<input type="email" id="email" name="email" placeholder="your email">
-							</div>
-						</div>
-						<div class="span6 unit">
-							<div class="input">
-								<label class="icon-right" for="phone">
-									<i class="fa fa-phone"></i>
-								</label>
-								<input type="text" id="phone" name="phone" placeholder="phone/mobile">
-							</div>
-						</div>
-					</div>
-					<!-- end email phone -->
-
-					<div class="divider-text gap-top-20 gap-bottom-45">
-						
-					</div>
-
-					<!-- start date and time -->
-					
-					<!-- end date and time -->
-
-					<!-- start airport_pick_up -->
-					<div class="unit logic-block-checkbox">
-						<label class="label">Is this an Upcoming Event?</label>
-						<label class="checkbox-toggle">
-							<input type="checkbox" name="next_step_checkbox" id="next-step-checkbox" value="Yes">
-							<i></i>
-						</label>
-						<span class="hint">
-							<strong>Note:</strong>
-							select "<strong>Yes</strong>" to add event info
-						</span>
-					</div>
-					<!-- end airport_pick_up -->
-
-				</fieldset>
-
-				<fieldset>
+				<fieldseth>
 
 					
-						<h3>Airport Information</h3>
+						<h3>Blog Posting</h3>
 					
 
 					<!-- start airport -->
@@ -118,10 +62,17 @@
 					<div class="j-row">
 						<div class="span6 unit">
 							<div class="input">
-								<label class="icon-right" for="airline_flight_number">
+								<label class="icon-right" for="airline_flight_number"> 
 									<i class="fa fa-list-ol"></i>
 								</label>
-								<input type="text" id="airline_flight_number" name="airline_flight_number" placeholder="airline and flight number">
+								Select Category
+								 <select id="category" name="category">
+								  <option value="1" selected>News</option>
+								  <option value="2">Business</option>
+								  <option value="3">Medical</option>
+								  <option value="4">Technology</option>
+								</select> 
+								
 							</div>
 						</div>
 						<div class="span6 unit">
@@ -133,15 +84,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- end airline luggage -->
-
-					<!-- start pickup_address -->
-
-					<!-- end pickup_address -->
-
-					<!-- start drop_off -->
-
-					<!-- end drop_off -->
+					
 
 					<!-- start message -->
 					<div class="unit">
@@ -162,7 +105,7 @@
 
 			<div class="footer">
 			
-				<button type="submit" class="primary-btn multi-submit-btn" >Submit</button>
+				<button type="button" class="primary-btn multi-submit-btn" onclick="return postData();" >Submit</button>
 				<button type="button" class="primary-btn multi-next-btn">Login</button>
 				<button type="button" class="secondary-btn multi-prev-btn">Back</button>
 				<button type="button" class="secondary-btn multi-pic-btn" id="takePicBtn" onclick="return capturePhoto();" >Add Picture</button>

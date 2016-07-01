@@ -1519,7 +1519,7 @@
 	transform:translateY(0);
 }
 .j-forms fieldset .unit,
-.j-forms fieldset .j-row { display:none; }
+.j-forms fieldset .j-row { display:block; }
 
 .j-forms .active-fieldset .unit,
 .j-forms .active-fieldset .j-row { display:block; }
