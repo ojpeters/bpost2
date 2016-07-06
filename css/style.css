@@ -30,11 +30,11 @@ a:hover {
 /*-- w3layouts --*/
 .element {
     width:35%;
-    margin:3em auto 0em;
+    margin:0em auto 0em;
 }
 .element h1 {
     font-size: 2.5em;
-    color: #fff;
+    color: #f99104;
     text-align: center;
     margin-bottom: 1em;
     font-weight: 400;
